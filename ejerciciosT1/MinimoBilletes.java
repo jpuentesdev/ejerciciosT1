@@ -33,8 +33,13 @@ public class MinimoBilletes {
 					System.out.println("1 billete de 5.");
 				}
 				
-			}
-			System.out.println("Sobran " +euros +" euros.");
+			        if(euros > 1){
+					System.out.println("Sobran " +euros +" euros.");
+				}else if(euros ==1){
+					System.out.println("Sobra " +euros +" euro.");
+				}else {
+					System.out.println("No sobra dinero.");
+				}
 			mysc.close();
 			}
 			

@@ -5,7 +5,7 @@ public class MinimoBilletes {
 
 		public static void main(String[] args) {
 			
-			Scanner mysc = new Scanner(System.in);  
+		    Scanner mysc = new Scanner(System.in);  
 		    System.out.println("Introduce una cantidad de euros: ");
 		    int euros = mysc.nextInt();  
 			
@@ -33,13 +33,14 @@ public class MinimoBilletes {
 					System.out.println("1 billete de 5.");
 				}
 				
-			        if(euros > 1){
-					System.out.println("Sobran " +euros +" euros.");
-				}else if(euros ==1){
-					System.out.println("Sobra " +euros +" euro.");
-				}else {
-					System.out.println("No sobra dinero.");
-				}
+			}
+			if(euros > 1){
+				System.out.println("Sobran " +euros +" euros.");
+			}else if(euros ==1){
+				System.out.println("Sobra " +euros +" euro.");
+			}else {
+				System.out.println("No sobra dinero.");
+			}
 			mysc.close();
 			}
 			
